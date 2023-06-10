@@ -2,7 +2,8 @@
 
 When using a DocumentGroup in the SwiftUI Lifecycle,
 the first view that the user sees is a `UIDocumentBrowserViewController`.
-So it's not easy to do anything special with the UI at that point 
+Because this isn't a SwiftUI view, and it's not passed to your app via the `@Environment`,
+it's not easy to do anything special with the UI at that point 
 from a SwiftUI perspective
 (eg put a button in the toolbar that can present a sheet).
 
