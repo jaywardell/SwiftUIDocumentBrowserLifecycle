@@ -42,7 +42,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
     override init() {
 
         self.listener = DocumentBrowserEventListener(.wasCreated) { documentBrowserViewController in
-            documentBrowserViewController.addLeadingToolbarItem(systemImageName: "scribble") { browser in
+            documentBrowserViewController.addToolbarItem(systemImageName: "scribble") { browser in
 
                 let exampleView = UIHostingController(rootView:
                     Text("Hello, World!")

@@ -13,15 +13,15 @@ public extension UIDocumentBrowserViewController {
 
     enum Position { case leading, trailing }
 
-    func addLeadingToolbarItem(systemImageName: String,
+    func addToolbarItem(systemImageName: String,
                                scale: UIImage.SymbolScale = .large,
                                at position: Position = .leading,
                                callback: @escaping (UIDocumentBrowserViewController) -> ()) {
 
-        addLeadingToolbarItem(UIBarButtonItem(systemImageName: systemImageName, scale: scale), at: position, callback: callback)
+        addToolbarItem(UIBarButtonItem(systemImageName: systemImageName, scale: scale), at: position, callback: callback)
     }
 
-    func addLeadingToolbarItem(_ barButtonItem: UIBarButtonItem,
+    func addToolbarItem(_ barButtonItem: UIBarButtonItem,
                                at position: Position = .leading,
                                callback: @escaping (UIDocumentBrowserViewController) -> ()) {
 
