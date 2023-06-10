@@ -18,9 +18,9 @@ public struct DocumentBrowserEventListener {
     public struct Event {
         let notificationName: Notification.Name
 
-        static var wasCreated: Self = .init(notificationName: UIScene.willConnectNotification)
-        static var becameActive: Self = .init(notificationName: UIScene.didActivateNotification)
-        static var becameInactive: Self = .init(notificationName: UIScene.didEnterBackgroundNotification)
+        public static var wasCreated: Self = .init(notificationName: UIScene.willConnectNotification)
+        public static var becameActive: Self = .init(notificationName: UIScene.didActivateNotification)
+        public static var becameInactive: Self = .init(notificationName: UIScene.didEnterBackgroundNotification)
     }
 
     public init(_ event: Event,  _ configure: @escaping (UIDocumentBrowserViewController) -> Void) {
