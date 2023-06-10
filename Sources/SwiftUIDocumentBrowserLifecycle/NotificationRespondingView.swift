@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if canImport(UIKit)
 /// A View that has no appearance, and listens for a given notification.
 /// When the notification is received, it calls a callback,
 /// passing in the notification received
@@ -22,3 +23,4 @@ struct NotificationRespondingView: View {
             }
     }
 }
+#endif
