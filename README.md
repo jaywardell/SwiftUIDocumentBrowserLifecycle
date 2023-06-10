@@ -17,8 +17,9 @@ Create a `DocumentBrowserEventListener`,
 passing in one of the events available 
 (`wasCreated`, `becameActive`, or `becameInactive`).
 In the callback, do whatever work you want to do.
-The ideal place to do this would be in a 
-`UIApplicationDelegate` marked with `@UIApplicationDelegateAdaptor`
+The ideal place to do this would be in the `init` for a 
+`UIApplicationDelegate` marked with `@UIApplicationDelegateAdaptor`,
+since it's called before the `UIScene` is created and it exists at the application level.
 
 Note that, as far as SwiftUI is concerned,
 the callback is being called outside the SwiftUI Lifecycle,
