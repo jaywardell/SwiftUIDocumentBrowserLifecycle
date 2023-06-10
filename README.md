@@ -50,6 +50,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
 
                 browser.present(exampleView, animated: true)
             }
+        }
 
         super.init()
     }
