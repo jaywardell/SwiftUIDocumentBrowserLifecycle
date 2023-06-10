@@ -61,3 +61,7 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
 ## Compatibility
 
 This package has only been tested against iOS 16, and has not been tested against the new iOS 17 beta as of 6/10/23.
+
+## Feedback
+
+Questions or comments can be sent to me at my [contact page](https://www.jaywardell.me/contact-me/).
