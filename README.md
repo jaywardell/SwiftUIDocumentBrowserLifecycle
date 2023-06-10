@@ -30,8 +30,6 @@ that are provided by the App struct, for example.
 
 There's also an extension on `UIDocumentBrowserViewController` that simplifies the process of adding a toolbar button to it. Just call `addLeadingToolbarItem()`, passing in a `UIBarButtonItem` and a callback for the work that you would like to do. The callback gives you back the `UIDocumentBrowserViewController`. There are defaults for most options you would want to change and an override that lets you just pass in a SF Symols system image name.
 
-You can call 
-
 ## Example Usage
 
 The following adds a toolbar button to the UIDocumentBrowserViewController that brings up a sheet containing a new SwiftUI view 
