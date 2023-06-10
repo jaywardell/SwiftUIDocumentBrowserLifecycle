@@ -11,7 +11,7 @@ to respond to some simple life-cycle events
 for the `UIDocumentBrowserViewController`,
 so that simple UI modifications like this can be done.
 
-## Listening for UIDocumentBrowserViewController Lifecycle Events with DocumentBrowserEventListener 
+## Listening for UIDocumentBrowserViewController Lifecycle Events 
 Create a `DocumentBrowserEventListener`,
 passing in one of the events available 
 (`wasCreated`, `becameActive`, or `becameInactive`).
