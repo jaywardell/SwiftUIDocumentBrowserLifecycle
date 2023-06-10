@@ -32,10 +32,9 @@ There's also an extension on `UIDocumentBrowserViewController` that simplifies t
 
 ## Example Usage
 
-The following adds a toolbar button to the UIDocumentBrowserViewController that brings up a sheet containing a new SwiftUI view 
+The following adds a toolbar button to the `UIDocumentBrowserViewController` that brings up a sheet containing a new SwiftUI view 
 
 ``` swift
-#if canImport(UIKit)
 final class AppDelegate: NSObject, UIApplicationDelegate {
 
     let listener: DocumentBrowserEventListener
@@ -46,26 +45,13 @@ final class AppDelegate: NSObject, UIApplicationDelegate {
             documentBrowserViewController.addLeadingToolbarItem(systemImageName: "scribble") { browser in
 
                 let exampleView = UIHostingController(rootView:
-                    Text("Wassup?!?!?!?!")
+                    Text("Hello, World!")
                 )
 
                 browser.present(exampleView, animated: true)
             }
-
-            documentBrowserViewController.addLeadingToolbarItem(systemImageName: "pencil.tip", scale: .small, at: .trailing) { browser in
-
-                let exampleView = UIHostingController(rootView:
-                    Image(systemName: "pencil")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                )
-
-                browser.present(exampleView, animated: true)
-            }
-        }
 
         super.init()
     }
 }
-#endif
 ```
